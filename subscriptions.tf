@@ -87,7 +87,7 @@ locals {
 }
 
 module "subscription-iam" {
-  source = "git@github.com:mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.0.1"
+  source = "github.com/mineiros-io/terraform-google-pubsub-subscription-iam?ref=v0.0.1"
 
   for_each = var.module_enabled ? local.pull_subscriptions_iam_map : {}
 
