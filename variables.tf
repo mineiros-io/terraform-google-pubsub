@@ -114,12 +114,6 @@ variable "pull_subscriptions" {
   default     = []
 }
 
-variable "grant_token_creator" {
-  type        = bool
-  description = "(Optional) Specify true if you want to add token creator role to the default Pub/Sub SA. Default is 'true'."
-  default     = true
-}
-
 # ------------------------------------------------------------------------------
 # MODULE CONFIGURATION PARAMETERS
 # These variables are used to configure the module.
