@@ -20,11 +20,11 @@ resource "google_pubsub_subscription" "subscription" {
   filter                     = try(each.value.filter, null)
   enable_message_ordering    = try(each.value.enable_message_ordering, null)
 
-  # DEFAULT: if the attribute doe snot exist use "" unlimited expiration - (do not expire)
+  # DEFAULT: if the attribute does not exist use "" unlimited expiration - (do not expire)
   # if ttl = `null` do not add the block (force default of 31d)
   # if set, use what ever has been set. (users whish is our command ;))
   dynamic "expiration_policy" {
-    for_each = try(each.value.expiration_policy_ttl, "") != "null" ? [1] : []
+    for_each = try(each.value.expiration_policy_ttl, "") != null ? [1] : []
 
     content {
       ttl = try(each.value.expiration_policy_ttl, "")
