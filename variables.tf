@@ -8,11 +8,6 @@ variable "topic_name" {
   description = "(Required) The name of the Pub/Sub topic."
 }
 
-variable "region" {
-  description = "(Required) The region to host the VPC and all related resources in."
-  type        = string
-}
-
 variable "project" {
   description = "(Required) The ID of the project in which the resources belong."
   type        = string
@@ -55,13 +50,6 @@ variable "kms_key_name" {
   type        = string
   description = "(Optional) The resource name of the Cloud KMS CryptoKey to be used to protect access to messages published on this topic. Default is 'null'."
   default     = null
-}
-
-variable "default_service_account" {
-  type        = string
-  description = "(Optional) If set, the service account will be used for all subscriptions. Otherwise, the module will look for a service account to be set in each subscription and use the PubSubs default service account if none is provided. Default is 'null'."
-  default     = null
-
 }
 
 variable "publish_iam_members" {

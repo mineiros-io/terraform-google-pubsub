@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4]
+
+### Fixed
+
+- Remove unused legacy variables to fix API
+
 ## [0.0.3]
 
 ### Added
@@ -27,7 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdown-link-check-disable -->
 
-[unreleased]: https://github.com/mineiros-io/terraform-google-pubsub/compare/v0.0.3...HEAD
+[unreleased]: https://github.com/mineiros-io/terraform-google-pubsub/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/mineiros-io/terraform-google-pubsub/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/mineiros-io/terraform-google-pubsub/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/mineiros-io/terraform-google-pubsub/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/mineiros-io/terraform-google-pubsub/releases/tag/v0.0.1
