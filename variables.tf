@@ -8,15 +8,16 @@ variable "topic_name" {
   description = "(Required) The name of the Pub/Sub topic."
 }
 
-variable "project" {
-  description = "(Required) The ID of the project in which the resources belong."
-  type        = string
-}
-
 # ---------------------------------------------------------------------------------------------------------------------
 # OPTIONAL VARIABLES
 # These variables have defaults, but may be overridden.
 # ---------------------------------------------------------------------------------------------------------------------
+
+variable "project" {
+  type        = string
+  description = "(Optional) The ID of the project in which the resource belongs. If it is not set, the provider project is used."
+  default     = null
+}
 
 variable "topic_labels" {
   type        = map(string)
