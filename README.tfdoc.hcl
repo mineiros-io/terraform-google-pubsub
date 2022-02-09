@@ -394,7 +394,7 @@ section {
     section {
       title   = "Google  Documentation"
       content = <<-END
-        - https://cloud.google.com/pubsub#section-1
+        - https://cloud.google.com/pubsub
       END
     }
 

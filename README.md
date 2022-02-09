@@ -306,7 +306,7 @@ The following attributes are exported in the outputs of the module:
 
 ### Google  Documentation
 
-- https://cloud.google.com/pubsub#section-1
+- https://cloud.google.com/pubsub
 
 ### Terraform GPC Provider Documentation
 
