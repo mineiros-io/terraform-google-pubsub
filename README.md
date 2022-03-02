@@ -56,7 +56,7 @@ Most common usage of the module:
 
 ```hcl
 module "terraform-google-pubsub" {
-  source = "git@github.com:mineiros-io/terraform-google-pubsub.git?ref=v0.0.1"
+  source = "git@github.com:mineiros-io/terraform-google-pubsub.git?ref=v0.0.4"
 
   topic_name = "name"
   project    = "project-id"
