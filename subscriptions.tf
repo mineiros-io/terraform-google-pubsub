@@ -5,7 +5,7 @@ locals {
 
 # TODO convert to module and provide upgrade path
 resource "google_pubsub_subscription" "subscription" {
-  for_each = var.module_enabled ? local.subscriptions_map : tomap({})
+  for_each = var.module_enabled ? local.subscriptions_map : {}
 
   project = var.project
 
